@@ -86,24 +86,24 @@ h1 {
 
 .text-center{
 		text-align: center;;
-		font-size: 0.6em;
+		font-size: 28px;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 		color: #A25AF1;
 		padding-left: 20px
 	}
 
-	.ruler {
-		display: block;
-		border: 1px;
-	}
-
 table {
 	border-collapse:collapse;
 	width:80%;
-	margin-left:auto;
+	margin-left: auto;
 	margin-right: auto;
+	border: 1px;
 }
 
-table, td, th {
-border: 0px;
+td, th {
+border: 0px solid #000;
+}
+
+td {
+	border-bottom: 1px solid #000000;
 }
