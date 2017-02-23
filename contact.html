@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<nav id="nav">
+	<ul>
+  	<li><a href="index.html">Home</a></li>
+		<li><a href="tutorial.html">Tutorial</a></li>
+		<li><a href="contact.html">Contact</a></li>
+   </ul>
+</nav>
+
+<head>
+  <!-- Universal Transformation Format 8 bit - is tha standard character set for the WWW -->
+  <meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+	<script>
+	$(document).ready(function(){
+		$("#main").hide();
+		$("#main").toggle("slow");
+	})
+	</script>
+
+<script>
+
+  function validate()
+  {
+    var Name = document.forms.frmContact.txtName.value;
+    var Email = document.forms.frmContact.txtEmail.value;
+    var Comment = document.forms.frmContact.txtComment.value;
+
+
+    if (Name.length < 1)
+    {
+      alert("Please tell us your name");
+      document.forms.frmContact.txtName.focus;
+      return false;
+
+    }
+
+    if (Email.length < 6)
+    {
+      alert("Please enter your email address");
+      document.forms.frmContact.txtEmail.focus;
+      return false;
+
+    }
+
+    if (Comment.length < 1)
+    {
+      alert("Please enter your comment or question");
+      document.forms.frmContact.txtComment.focus;
+      return false;
+
+    }
+    return true;
+  }
+
+</script>
+</head>
+
+<body>
+
+<div id="brand">
+	<img class="header" src="images/opusblue.png" />
+</div>
+
+<div id="main">
+  <form name="frmContact" method="post" action="addcomment.asp" onSubmit="return validate()";>
+     <p>
+
+       <label>
+          <span>Name: </span>
+          <input name="txtName" type="text" class="input_text" id="txtName" value="" />
+       </label>
+
+       <label>
+          <span>Email address: </span>
+          <input name="txtEmail" type="text" class="input_text" id="txtEmail" value="" />
+       </label>
+
+       <label>
+          <span>Comment: </span>
+          <textarea name="txtComment" cols="50" rows="10" class="area_text" id="txtComment"></textarea>
+       </label>
+
+        <label>
+          <span>
+            <input name="Submit" type="submit" class="submit" id="Submit" value="Send" />
+          </span>
+        </label>
+        
+      </p>
+  </form>
+</div>
+
+<div id="footer">
+
+</div>
+
+</body>
+
+</html>

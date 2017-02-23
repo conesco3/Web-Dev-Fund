@@ -1,0 +1,77 @@
+/* CSS Document */
+form,input,select,textarea{
+	margin:0;
+	padding:0;
+
+}
+/* the next few styles define how form elements behave in the layer*/
+label {
+	width:100%;
+	display: block;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#000099;
+}
+label span {
+	display:block;
+	float:left;
+	width:300px;
+	text-align:right;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: 600;
+	color:#000099;
+	background-color: #FFFFFF;
+	border: 1px solid #003399;
+}
+/* Style to set the look of an input field before it gets the focus */
+.input_text {
+	border:1px solid #003399;
+	width: 200px;
+	height: 20px;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-color:#FBF8DA;
+}
+/* Style to change the look of an input field when it gets the focus */
+.input_text:focus {
+	border: 1px solid #000000;
+	background-color:#FFFFFF;
+}
+.area_text {
+	border:1px solid #003399;
+	width: 40%;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-color:#FBF8DA;
+}
+/* Style to change the look of an text area when it gets the focus */
+.area_text:focus {
+	border: 1px solid #000000;
+	background-color:#FFFFFF;
+}
+/* style for the form submit button*/
+.submit {
+	border:1px solid #003399;
+	width:70px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-color:#6699CC;
+}
+/* Style to change the look of the submit button when it gets the focus */
+.submit:hover {
+	border: 1px solid #6699CC;
+	background-color:#FFFFFF;
+}
