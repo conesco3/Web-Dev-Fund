@@ -2,11 +2,10 @@
 $email = "conesco.3@gmail.com";
 
 $name = htmlspecialchars($_POST['txtName']);
-$people = htmlspecialchars($_POST['People']);
-$date = htmlspecialchars($_POST['date']);
-$msg = htmlspecialchars($_POST['Message']);
+$user_email = htmlspecialchars($_POST['txtEmail']);
+$msg = htmlspecialchars($_POST['txtComment']);
 
-$email_message = "Name: $name \r\n Number of People: $people \r\n Date: $date \r\n Message: $msg \r\n";
-mail($email, 'Booking', $email_message);
+$email_message = "Name: $name \r\n Email: $user_email \r\n Message: $msg \r\n";
+mail($email, 'Contact Us Message', $email_message);
 header("location: index.php");
 ?>

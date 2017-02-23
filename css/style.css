@@ -103,3 +103,7 @@ table {
 td, th {
 border: 0px solid #000;
 }
+
+td {
+	border-bottom: 1px solid #000;
+}
